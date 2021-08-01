@@ -37,7 +37,7 @@ class UIComponent {
 
       this.shadowDOM.appendChild(styleSheet);
       this.shadowDOM.appendChild(this.iframeElement);
-      this.handleDarkReaderFilter();
+      //this.handleDarkReaderFilter();
       this.toggleIframeElementClasses("vimiumUIComponentVisible", "vimiumUIComponentHidden");
 
       // Open a port and pass it to the iframe via window.postMessage.  We use an AsyncDataFetcher to handle
