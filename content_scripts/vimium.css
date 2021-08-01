@@ -80,18 +80,34 @@ div.internalVimiumHintMarker {
   overflow: hidden;
   font-size: 11px;
   padding: 1px 3px 0px 3px;
-  background: linear-gradient(to bottom, #FFF785 0%,#FFC542 100%);
-  border: solid 1px #C38A22;
+  /*background: linear-gradient(to bottom, #FFF785 0%,#FFC542 100%);*/
+  /*border: solid 1px #C38A22;*/
   border-radius: 3px;
   box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.3);
+
+  background: #000000;
+  border: 1px solid #FF0000;
+
 }
 
 div.internalVimiumHintMarker span {
+  
+  /*
   color: #302505;
+  */
   font-family: Helvetica, Arial, sans-serif;
+  /*
   font-weight: bold;
   font-size: 11px;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+  */
+
+  /* linkhint text */
+  color: #FF0000;
+  /* font-weight: bold; */
+  font-weight: normal;
+  font-size: 10px;
+  text-shadow: none;
 }
 
 div.internalVimiumHintMarker > .matchingCharacter {
@@ -107,9 +123,14 @@ div > .vimiumActiveHintMarker span {
 div.internalVimiumInputHint {
   position: absolute;
   display: block;
+  /*
   background-color: rgba(255, 247, 133, 0.3);
   border: solid 1px #C38A22;
+ */
   pointer-events: none;
+
+  background-color: #000000;
+  border: 1px solid #FF0000;
 }
 
 div.internalVimiumSelectedInputHint {
