@@ -74,48 +74,31 @@ tbody.vimiumReset {
 div.internalVimiumHintMarker {
   position: absolute;
   display: block;
-  top: -1px;
+  top: -1px; /* position relative to ancestor */
   left: -1px;
   white-space: nowrap;
   overflow: hidden;
   font-size: 11px;
-  padding: 1px 3px 0px 3px;
-  /*background: linear-gradient(to bottom, #FFF785 0%,#FFC542 100%);*/
-  /*border: solid 1px #C38A22;*/
-  border-radius: 3px;
-  box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.3);
-
+  padding: 1px 1px 1px 1px;
   background: #000000;
-  border: 1px solid #FFFF00;
-
+  border: 1px solid #FFAF00;
+  border-radius: 0px; /* rounded corners */
 }
 
 div.internalVimiumHintMarker span {
-  
-  /*
-  color: #302505;
-  */
   font-family: Helvetica, Arial, sans-serif;
-  /*
-  font-weight: bold;
-  font-size: 11px;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
-  */
-
-  /* linkhint text */
   color: #FFFF00;
-  /* font-weight: bold; */
   font-weight: normal;
-  font-size: 12px;
+  font-size: 11px;
   text-shadow: none;
 }
 
 div.internalVimiumHintMarker > .matchingCharacter {
-  color: #D4AC3A;
+  color: #00FFFF;
 }
 
 div > .vimiumActiveHintMarker span {
-  color: #A07555 !important;
+  color: #FF00FF !important;
 }
 
 /* Input hints CSS */
@@ -123,14 +106,9 @@ div > .vimiumActiveHintMarker span {
 div.internalVimiumInputHint {
   position: absolute;
   display: block;
-  /*
-  background-color: rgba(255, 247, 133, 0.3);
-  border: solid 1px #C38A22;
- */
-  pointer-events: none;
-
   background-color: #000000;
-  border: 1px solid #FFFF00;
+  border: solid 1px #FFFF00;
+  pointer-events: none;
 }
 
 div.internalVimiumSelectedInputHint {
