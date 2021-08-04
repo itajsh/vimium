@@ -79,9 +79,10 @@ div.internalVimiumHintMarker {
   white-space: nowrap;
   overflow: hidden;
   font-size: 11px;
-  padding: 1px 1px 1px 1px;
+  /*padding: 1px 1px 1px 1px;*/
+  padding: 2px 2px 2px 2px;
   background: #000000;
-  border: 1px solid #FFAF00;
+  border: 0px solid #FFAF00;
   border-radius: 0px; /* rounded corners */
 }
 
