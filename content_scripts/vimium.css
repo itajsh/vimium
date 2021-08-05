@@ -82,20 +82,20 @@ div.internalVimiumHintMarker {
   /*padding: 1px 1px 1px 1px;*/
   padding: 2px 2px 2px 2px;
   background: #000000;
-  border: 0px solid #FFAF00;
+  border: 0px solid #FF00AF;
   border-radius: 0px; /* rounded corners */
 }
 
 div.internalVimiumHintMarker span {
   font-family: Helvetica, Arial, sans-serif;
-  color: #FFFF00;
+  color: #FF00FF;
   font-weight: normal;
   font-size: 11px;
   text-shadow: none;
 }
 
 div.internalVimiumHintMarker > .matchingCharacter {
-  color: #00FFFF;
+  color: #0000FF;
 }
 
 div > .vimiumActiveHintMarker span {
