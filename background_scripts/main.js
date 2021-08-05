@@ -403,6 +403,21 @@ chrome.webNavigation.onCommitted.addListener(function({tabId, frameId}) {
   return chrome.tabs.insertCSS(tabId, cssConf, () => chrome.runtime.lastError);
 });
 
+chrome.tabs.onCreated.addListener(insertCssForTab);
+chrome.tabs.onUpdated.addListener(function(tabId, info, tab) {
+    if (info.status == 'complete') insertCssForTab(tab);
+});
+
+function insertCssForTab(tab) {
+  const tabId = tab.id;
+  const cssConf = {
+    allFrames: true,
+    code: Settings.get("userDefinedLinkHintCss"),
+    runAt: "document_start"
+  };
+  chrome.tabs.insertCSS(tabId, cssConf, () => chrome.runtime.lastError);
+}
+
 // Symbolic names for the three browser-action icons.
 const ENABLED_ICON = "icons/browser_action_enabled.png";
 const DISABLED_ICON = "icons/browser_action_disabled.png";
